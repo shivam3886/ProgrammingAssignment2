@@ -5,9 +5,9 @@
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
-    set <- function(y) {            ## if user want to reset matrix 
-        x <<- y                     ## reassign "new" matrix to x 
-        m <<- NULL                  ## reinitialize m to NULL
+    set <- function(y) {             
+        x <<- y                     
+        m <<- NULL                  
     }
     get <- function() x
     setInvmatrix <- function(InvMatrix) m <<- InvMatrix
